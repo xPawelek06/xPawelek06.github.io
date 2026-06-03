@@ -1,43 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <title>Autobiografia</title>
-  <style>
-    .kolor-tla {background-color: black}
-    .kontener-obrazka {
-      max-width: 500px;
-      margin: 50px auto;
-      text-align: center;
-      font-family: sans-serif;
-      color: white;
-    }
-    .kontener-zdjecia {
-      width: 50%;
-      height: auto;
-      border-radius: 50px;
-    }
-    .kontener-opisu {
-      color: white;
-      max-width: 500px;
-      margin: 50px auto;
-      font-family: "sans-serif";
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="kolor-tla">
-<div class="kontener-obrazka">
-  <h2>Cześć, nazywam się Paweł Łapiński</h2>
-  <img alt src="autobiografia.jpg" class="kontener-zdjecia">
-</div>
-<div class="kontener-opisu">
-  <h2>O mnie</h2>
-  <h4>Mam 20 lat. Interesuję się programowaniem, montowaniem oraz sportem</h4>
-  <h4>- Pierwsze kroki w proghramowaniu zacząłęm 4 lata temu. Od tego czasu poznałem: Java, Python oraz HTML</h4>
-  <h4>- Od dzieciaka uwielbiam jeździć na rowerze, a przygodę z siłownią rozpocząłęm 2 lata temu</h4>
-  <h4>- Montuje głównie własne filmy pod swój kanał na YouTube</h4>
-  <br>
-  <h4>Ukończona szkoła: I Liceum Ogólnokształcące im. Adama Mikckiewicza w Łapach</h4>
-</div>
+<nav class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#hobby">Hobby</a></li>
+    <li><a href="#moje-projekty">Moje projekty</a></li>
+    <li><a href="#o-mnie">O mnie</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <div class="kontener-powitalny">
+    <h1>Cześć, nazywam się Paweł Łapiński</h1>
+    <img alt src="autobiografia.jpg" class="zdjecie-moje">
+  </div>
+</section>
+
+<section id="hobby" style="color: white; text-align: center; font-family: sans-serif">
+  <h1>Hobby</h1>
+
+  <div class="kontener-hobby">
+    <figure class="hobby-item">
+      <img src="programowanie.png" alt="programowanie" class="zdjecie-hobby">
+      <h4>Programowanie</h4>
+      <p>Języki, których się uczę:</p>
+      <p>● Python</p>
+      <p>● Java</p>
+    </figure>
+
+    <figure class="hobby-item">
+      <img src="bieganie.png" alt="bieganie" class="zdjecie-hobby">
+      <h4>Bieganie</h4>
+      <p>Sukcesy:</p>
+      <p>● Półmaraton: 1h50min49sec</p>
+      <p>● Bieg Kikolskiego(5km): 21min</p>
+    </figure>
+
+    <figure class="hobby-item">
+      <img src="rower.png" alt="jazda na rowerze" class="zdjecie-hobby">
+      <h4>Jazda na rowerze</h4>
+      <p>● Nadłuższy dystans: ok. 70km</p>
+    </figure>
+  </div>
+</section>
+
+<section id="moje-projekty">
+  <h1 style="color: white; font-family: sans-serif; text-align: center">Moje projekty</h1>
+
+  <div class="kontener-opisu">
+    <h3>• Automat z Kawą: Java</h3>
+    <p>Prosty program, który pobiera od użytkownika, ile ma pieniędzy, a następnie prosi o wybór kawy.</p>
+    <p>Jeżeli użytkownik ma wystarczającą ilość pieniędzy, kawa zostaje zrobiona i automat zwraca reszte pieniędzy. </p>
+    <p>Jeżeli użytkownik nie ma wystarczającej ilości pieniędzy, automat daje komunikat i pisze, ile pieniędzy brakuje do zakupu kawy.</p>
+    <br>
+
+
+    <h3>• Biblioteka "System-Aleksandria": Java</h3>
+    <p>Symulator biblioteki, w którym możesz:</p>
+    <p>- Dodawać i usuwać książki</p>
+    <p>- Wyporzyczać oraz zdawać książki</p>
+    <br>
+
+    <h3>• DiscordBot: Python</h3>
+    <p>Bot wspomagający liderów klanów, dzięki któremu przywódca klanu może zobaczyć:</p>
+    <p>- Kto w danym tygodniu był aktywny</p>
+    <p>- Ilość zdobytych pucharków przez danego członka klanu</p>
+    <p>Bot samodzielnie raz w tygodniu wysyła raport ze statystykami.</p>
+    <p>Bot posiada również specjalną weryfikację do każdego serwera, pokazującą wymagania zespołu.</p>
+    <p>Informuje o zmianach map na każdym trybie oraz sugeruje najlepsze postacie na daną mapę</p>
+    <p>Bot również śledzi miesięczny postęp klanu</p>
+    <br>
+
+    <p>Tutaj możesz zobaczyć moje projkty → <a href="https://github.com/xPawelek06" target="_blank">GitHub</a></p>
+  </div>
+</section>
+
+<section id="o-mnie">
+  <div class="kontener-opisu">
+    <h1>O mnie</h1>
+    <h4>Mam 20 lat</h4>
+    <h4>Ukończona szkoła: I Liceum Ogólnokształcące im. Adama Mickiewicza w Łapach</h4>
+  </div>
+</section>
+
+<footer class="stopka">
+  <div class="stopka-kontent">
+    <p>&copy; 2026 Paweł Łapiński. Wszystkie prawa zastrzeżone.</p>
+
+    <div class="social-links">
+      <a href="https://github.com/xPawelek06" target="_blank" class="github-link" title="Mój GitHub">
+      <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://www.youtube.com/@HistorieZKrwiIKosci" target="_blank" class="youtube-link" title="HistorieZKrwiIKosci">
+      <i class="fa-brands fa-youtube"></i>
+      </a>
+
+      <a href="https://www.tiktok.com/@historiezkrwiikosci" target="_blank" class="tiktok-link" title="HistorieZKrwiIKosci">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

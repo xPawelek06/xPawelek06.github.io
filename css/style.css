@@ -84,6 +84,110 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  scroll-behavior: smooth;
+}
+.kolor-tla {background-color: black}
+
+.navbar {
+  background-color: #222222;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.kontener-powitalny {
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+.zdjecie-moje {
+  width: 50%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.zdjecie-hobby {
+  width: 40%;
+  height: auto;
+  border-radius: 100px;
+}
+.kontener-hobby {
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+.hobby-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kontener-opisu {
+  color: white;
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: "sans-serif";
+}
+
+.stopka {
+  background-color: #111111;
+  padding: 30px;
+  margin-top: 80px;
+  border-top: 1px solid #222;
+}
+.stopka-kontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-family: sans-serif;
+  color: #777777;
+  font-size: 0.9rem;
+}
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+.github-link, .youtube-link, .tiktok-link {
+  color: white;
+  font-size: 2.5rem;
+  transition: transform 0.3s, color 0.3s;
+  text-decoration: none;
+}
+.github-link:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+.youtube-link:hover {
+  color: #ff0000;
+  transform: scale(1.1);
+}
+.tiktok-link:hover {
+  color: #fe2c55;
+  transform: scale(1.1);
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
