@@ -149,6 +149,11 @@ html {
   margin: 40px auto;
   font-family: "sans-serif";
 }
+.kontener-zdjec {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
 .stopka {
   background-color: #111111;
@@ -169,7 +174,7 @@ html {
   display: flex;
   gap: 20px;
 }
-.github-link, .youtube-link, .tiktok-link {
+.github-link, .youtube-link, .tiktok-link, .linkedin-link {
   color: white;
   font-size: 2.5rem;
   transition: transform 0.3s, color 0.3s;
@@ -187,7 +192,22 @@ html {
   color: #fe2c55;
   transform: scale(1.1);
 }
+.linkedin-link:hover {
+  color: #0077b5;
+  transform: scale(1.1);
+}
 
+
+
+/* ==========================================================================
+   STYLE DLA TELEFONÓW (Ekrany mniejsze niż 768px)
+   ==========================================================================
+ */
+@media (max-width: 768px) {
+  .kontener-hobby {
+  flex-direction: column;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
