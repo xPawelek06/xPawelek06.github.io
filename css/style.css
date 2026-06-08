@@ -207,6 +207,9 @@ html {
   .kontener-hobby {
   flex-direction: column;
   }
+  .navbar li a{
+    font-size: 0.85rem;
+  }
 }
 /* ==========================================================================
    Helper classes
